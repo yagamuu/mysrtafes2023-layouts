@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  nodecg:
+    build: 
+      context: .
+      args:
+        VARIANT: "16-bullseye"
+    ports:
+      - "9090:9090"
+    volumes:
+      - ../:/home/node/app/bundles/mysrtafes2023-layouts
+      - ../cfg:/home/node/app/cfg
+      - ../db:/home/node/app/db
+      - ../assets:/home/node/app/assets
+    command: /bin/sh -c "while sleep 1000; do :; done"

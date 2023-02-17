@@ -1,17 +1,17 @@
 {
-  "name": "nodecg-vue-ts-template",
-  "version": "2.0.0",
-  "description": "Template for NodeCG bundles that use Vue.js and TypeScript.",
-  "homepage": "https://github.com/zoton2/nodecg-vue-ts-template#readme",
+  "name": "mysrtafes2023-layouts",
+  "version": "1.0.0",
+  "description": "The on-stream layouts for Mystery Dungeon RTA FES 4",
+  "homepage": "https://oengus.io/marathon/mysrtafes4",
   "bugs": {
-    "url": "https://github.com/zoton2/nodecg-vue-ts-template/issues"
+    "url": "https://github.com/yagamuu/mysrtafes2023-layouts/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zoton2/nodecg-vue-ts-template.git"
+    "url": "git+https://github.com/yagamuu/mysrtafes2023-layouts.git"
   },
   "license": "MIT",
-  "author": "zoton2",
+  "author": "yagamuu",
   "scripts": {
     "autofix": "run-s autofix:*",
     "autofix:browser": "eslint --fix --ext .ts,.vue src/dashboard && eslint --fix --ext .ts,.vue src/graphics",
@@ -49,6 +49,7 @@
     "nodecg-vue-composable": "^1.1.0",
     "npm-run-all": "^4.1.5",
     "quasar": "^2.10.2",
+    "run-p": "^0.0.0",
     "trash-cli": "^5.0.0",
     "typescript": "^4.9.3",
     "vite": "^2.9.15",
