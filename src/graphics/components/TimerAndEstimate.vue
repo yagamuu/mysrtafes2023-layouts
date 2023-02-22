@@ -2,7 +2,7 @@
 import { useReplicant } from 'nodecg-vue-composable';
 import { computed } from 'vue';
 import type { RunDataActiveRun, Timer } from '@mysrtafes2023-layouts/types/schemas/speedcontrol';
-import * as util from '@mysrtafes2023-layouts/graphics/util/format';
+import * as util from '../util/format';
 
 const runDataActiveRun = useReplicant<RunDataActiveRun>(
   'runDataActiveRun',
