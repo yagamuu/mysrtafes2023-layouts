@@ -1,0 +1,389 @@
+body {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  position: absolute;
+  width: 201px;
+  height: 254px;
+  left: 0px;
+  top: 776px;
+}
+
+.titleWrap {
+  box-sizing: border-box;
+
+  /* オートレイアウト */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 40px;
+  gap: 16px;
+
+  position: absolute;
+  width: 1359px;
+  height: 161px;
+  left: 201px;
+  top: 776px;
+
+  /* bgHeader
+  
+  ゲームタイトル背景色
+  */
+  background: rgba(0, 0, 0, 0.38);
+  background-blend-mode: multiply;
+  /* mdrfPrimaryThin
+  
+  枠線色
+  */
+  border-width: 4px 4px 4px 0px;
+  border-style: solid;
+  border-color: #edfaf1;
+}
+.titleWrap img {
+  margin: 16px 0;
+}
+
+.title {
+  width: 922px;
+  height: 63px;
+
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 125%;
+  /* ボックスの高さと同一、または62px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
+
+  /* オートレイアウト内部 */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  display: block;
+}
+
+.time > span {
+  width: 212px;
+  height: 70px;
+
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 100%;
+  /* ボックスの高さと同一、または70px */
+
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: 0.005em;
+
+  /* textPrimary */
+
+  color: #363636;
+
+  /* オートレイアウト内部 */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.time {
+  background-image: url("../images/triple8x7flat/timeBack.png");
+  background-size: cover;
+  position: absolute;
+  width: 360px;
+  height: 161px;
+  left: 1560px;
+  top: 776px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: solid 4px #edfaf1;
+}
+
+.time p {
+  width: 223px;
+  height: 30px;
+
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 125%;
+  /* または38px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* textPrimary */
+
+  color: #363636;
+
+  /* オートレイアウト内部 */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.time p .mes {
+  width: 120px;
+  height: 24px;
+
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 100%;
+  /* ボックスの高さと同一、または24px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* textPrimary */
+
+  color: #363636;
+
+  /* オートレイアウト内部 */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.time p .count {
+  width: 95px;
+  height: 30px;
+
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  /* ボックスの高さと同一、または30px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* textPrimary */
+
+  color: #363636;
+
+  /* オートレイアウト内部 */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.category {
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  /* ボックスの高さと同一、または100% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  /* オートレイアウト内部 */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  width: 319px;
+  height: 68px;
+}
+
+.categoryDetail {
+  margin-bottom: 15px;
+}
+
+.discordBox {
+  position: absolute;
+}
+
+.player_name {
+  /* Block/走者表示PUP16×9 */
+
+  box-sizing: border-box;
+
+  /* オートレイアウト */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 12px 8px 8px;
+  border-top: 6px solid #2b5f3b;
+  border-left: 16px solid #2b5f3b;
+  gap: 10px;
+
+  background: #71b988;
+
+  /* オートレイアウト内部 */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 41px;
+  /* ボックスの高さと同一 */
+
+  display: flex;
+
+  color: #ffffff;
+}
+
+.clear .player_name {
+  border-top: 6px solid #f5d426;
+  border-left: 16px solid #f5d426;
+}
+
+.player1 .player_name:after,
+.player2 .player_name:after,
+.player3 .player_name:after {
+  display: block;
+  height: 4px;
+  position: absolute;
+  width: 100%;
+  content: "";
+  background-color: #edfaf1;
+  bottom: -4px;
+  left: 0;
+}
+
+.player1 .player_time,
+.player2 .player_time,
+.player3 .player_time {
+  opacity: 0;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 12px;
+  bottom: 0px;
+
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 47px;
+  text-align: right;
+
+  /* textFinish */
+
+  color: #ffe142;
+
+  /* オートレイアウト内部 */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  color: #ffe142;
+}
+
+.player_time img {
+  width: 36px;
+  height: 36px;
+  margin-right: 3px;
+}
+
+.player1.clear .player_time,
+.player2.clear .player_time,
+.player3.clear .player_time {
+  opacity: 1;
+}
+
+.player_display {
+  width: 638px;
+  height: 558.25px;
+  background-color: red;
+}
+
+.player1 {
+  /* オートレイアウト */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  isolation: isolate;
+
+  position: absolute;
+  width: 638px;
+  height: 620px;
+  left: 0px;
+  top: 92px;
+
+  border-width: 4px 0px 4px 4px;
+  border-style: solid;
+  border-color: #edfaf1;
+}
+
+.player2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  isolation: isolate;
+
+  position: absolute;
+  width: 646px;
+  height: 620px;
+  left: 638px;
+  top: 92px;
+
+  border-width: 4px 4px 4px 4px;
+  border-style: solid;
+  border-color: #edfaf1;
+}
+
+.player3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  isolation: isolate;
+
+  position: absolute;
+  width: 638px;
+  height: 620px;
+  right: 0px;
+  top: 92px;
+  border-width: 4px 0px 4px 4px;
+  border-style: solid;
+  border-color: #edfaf1;
+}

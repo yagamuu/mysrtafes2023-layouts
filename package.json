@@ -28,11 +28,13 @@
   },
   "dependencies": {
     "module-alias": "^2.2.2",
+    "needle": "^3.2.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@quasar/extras": "^1.15.6",
     "@quasar/vite-plugin": "^1.2.3",
+    "@types/needle": "^3.2.0",
     "@types/node": "^18.11.10",
     "@types/uuid": "^9.0.0",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
@@ -63,6 +65,10 @@
   },
   "nodecg": {
     "compatibleRange": "^1.9.0",
+    "bundleDependencies": {
+      "nodecg-speedcontrol": "^2.5.0",
+      "nodecg-spotify-widget": "^0.9.0"
+    },
     "dashboardPanels": [
       {
         "name": "setupInformation",
@@ -88,9 +94,99 @@
     ],
     "graphics": [
       {
-        "file": "example.html",
+        "file": "setup.html",
         "width": 1920,
         "height": 1080
+      },
+      {
+        "file": "singleHd.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "singleSd.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "single3ds.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "single8x7.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "single17x13.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "double.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "double3x2.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "doubleSD.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "tripleHD.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "tripleHDPick.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "tripleSD.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "tripleSDPick.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "triple8x7.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "triple8x7Pick.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ],
+    "assetCategories": [
+      {
+        "name": "gameLayoutBg",
+        "title": "Game Layout Background Image",
+        "allowedTypes": [
+          "jpg",
+          "jpeg",
+          "png"
+        ]
+      },
+      {
+        "name": "setupLayoutBg",
+        "title": "Setup Layout Background Image",
+        "allowedTypes": [
+          "jpg",
+          "jpeg",
+          "png"
+        ]
       }
     ]
   }

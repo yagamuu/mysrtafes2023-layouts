@@ -25,3 +25,11 @@ nodecg().listenFor('changeStartSoon', (data, ack) => {
     ack(null);
   }
 });
+
+nodecg().listenFor('timerStart', 'nodecg-speedcontrol', (data, ack) => {
+  changeStartSoon(false);
+
+  if (ack && !ack.handled) {
+    ack(null);
+  }
+});

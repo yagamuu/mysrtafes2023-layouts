@@ -1,12 +1,8 @@
 <script setup lang="ts">
-import { useHead } from '@vueuse/head';
 import { useReplicant } from 'nodecg-vue-composable';
 import { ref, computed, watchEffect } from 'vue';
 import { RunDataActiveRun } from '@mysrtafes2023-layouts/types/schemas/speedcontrol/RunData';
 import { DisplaySound } from '@mysrtafes2023-layouts/types/schemas/displaySound';
-
-// Set the title of this page.
-useHead({ title: 'Display Sound' });
 
 const runDataActiveRun = useReplicant<RunDataActiveRun>('runDataActiveRun', 'nodecg-speedcontrol');
 const displaySound = useReplicant<DisplaySound>('displaySound', 'mysrtafes2023-layouts');

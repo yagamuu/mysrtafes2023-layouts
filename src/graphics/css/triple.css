@@ -1,0 +1,361 @@
+body {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titleWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 40px;
+  gap: 16px;
+
+  position: absolute;
+  width: 1627px;
+  height: 184px;
+  left: 293px;
+  top: 0px;
+
+  /* bgHeader
+    
+    ゲームタイトル背景色
+    */
+  background: rgba(0, 0, 0, 0.38);
+  background-blend-mode: multiply;
+  /* mdrfPrimaryThin
+    
+    枠線色
+    */
+  border-bottom: 4px solid #edfaf1;
+}
+
+.title {
+  width: 1085px;
+  height: 126px;
+
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 125%;
+  /* または62px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
+
+  /* オートレイアウト内部 */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.time > span {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 100%;
+  /* ボックスの高さと同一、または70px */
+
+  letter-spacing: 0.005em;
+
+  width: 360px;
+  /* textPrimary */
+  color: #363636;
+
+  /* オートレイアウト内部 */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 8px;
+}
+
+.time {
+  background-image: url(../images/triple/timeBack.png);
+  position: absolute;
+  width: 358px;
+  height: 195px;
+  left: 1562px;
+  top: 223px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  border-width: 0px 0px 4px 0px;
+  border-style: solid;
+  border-color: #edfaf1;
+}
+
+.time p {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #363636;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.time p .mes {
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 100%;
+  margin-top: 4px;
+}
+
+.time p .count {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #363636;
+  margin-left: 8px;
+}
+
+.category {
+  width: 424px;
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  /* ボックスの高さと同一、または100% */
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  color: #ffffff;
+}
+
+.categoryDetail {
+  margin-bottom: 15px;
+}
+
+.discordBox {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 293px;
+  height: 687px;
+  left: 0px;
+  top: 345px;
+
+  /* mdrfPrimaryThin
+    
+    枠線色
+    */
+  border-width: 4px 4px 0px 0px;
+  border-style: solid;
+  border-color: #edfaf1;
+}
+
+.discordBox_underLine {
+  position: absolute;
+  width: 289.13px;
+  height: 38px;
+  left: 0px;
+  top: 984px;
+  display: block;
+  background: url(../images/triple/underDiscord.png);
+  content: "";
+  background-size: cover;
+}
+
+.player_name {
+  /* Block/走者表示PUP16×9 */
+
+  box-sizing: border-box;
+
+  /* オートレイアウト */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2px 12px 8px 8px;
+  border-top: 6px solid #2b5f3b;
+  border-left: 16px solid #2b5f3b;
+  gap: 10px;
+
+  width: 358px;
+  height: 85px;
+
+  /* mdrfPrimary */
+
+  background: #71b988;
+
+  /* オートレイアウト内部 */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 41px;
+  /* ボックスの高さと同一 */
+
+  display: flex;
+
+  color: #ffffff;
+}
+
+.clear .player_name {
+  border-top: 6px solid #f5d426;
+  border-left: 16px solid #f5d426;
+}
+
+.player1 .player_time,
+.player2 .player_time,
+.player3 .player_time {
+  opacity: 0;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 12px;
+  bottom: 2px;
+
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 41px;
+
+  color: #ffe142;
+}
+
+.player1 .player_time {
+  right: 15.6px;
+  bottom: 6.5px;
+
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 47px;
+  text-align: right;
+
+  /* textFinish */
+
+  color: #ffe142;
+}
+
+.player1 .player_time img {
+  width: 36px;
+  height: 36px;
+  margin-right: 4px;
+}
+
+.player_time img {
+  width: 32px;
+  height: 32px;
+  margin-right: 3px;
+}
+
+.player1.clear .player_time,
+.player2.clear .player_time,
+.player3.clear .player_time {
+  opacity: 1;
+}
+
+.player_display {
+  width: 358px;
+  height: 202px;
+  background-color: red;
+}
+
+.player2 {
+  top: 418px;
+  right: 0;
+  position: absolute;
+}
+
+.player3 {
+  top: 705px;
+  right: 0;
+  position: absolute;
+  border-bottom: 4px solid #edfaf1;
+}
+
+.player1 {
+  position: absolute;
+  width: 1269px;
+  height: 773px;
+  left: 293px;
+  top: 223px;
+
+  border-width: 4px 4px 0px 0px;
+  border-style: solid;
+  border-color: #edfaf1;
+}
+
+.player1 .player_display {
+  background-color: red;
+  position: absolute;
+  width: 1265px;
+  height: 712px;
+}
+
+.player1 .player_name {
+  position: absolute;
+  width: 1265px;
+  height: 57px;
+  left: 0px;
+  top: 712px;
+}
+
+.player1:after {
+  position: absolute;
+  background-color: #edfaf1;
+  width: 100%;
+  height: 4px;
+  display: block;
+  bottom: 0;
+  left: 0;
+  content: "";
+}
+
+.player2 .bgmOn,
+.player3 .bgmOn {
+  position: absolute;
+  left: 25px;
+  bottom: 0px;
+}
+
+.player2 .bgmOn,
+.player3 .bgmOn {
+  position: absolute;
+  left: 25px;
+  bottom: 0px;
+}
+
+.player2:after {
+  position: absolute;
+  background-color: #edfaf1;
+  width: 100%;
+  height: 4px;
+  display: block;
+  bottom: 0;
+  left: 0;
+  content: "";
+}

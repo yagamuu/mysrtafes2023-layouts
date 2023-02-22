@@ -5,6 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface ExampleReplicant {
-	exampleProperty: string;
+export interface ExternalTwitchAPIData {
+	accessToken?: string;
+	refreshToken?: string;
 }

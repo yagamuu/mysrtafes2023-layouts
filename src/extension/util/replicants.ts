@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 
-import type { SetupInformationArray, DisplaySound, StartSoon } from '@mysrtafes2023-layouts/types/schemas';
+import type { SetupInformationArray, DisplaySound, StartSoon, ExternalTwitchAPIData } from '@mysrtafes2023-layouts/types/schemas';
 import type { RunDataActiveRun, Checklist } from '@mysrtafes2023-layouts/types/schemas/speedcontrol';
 import { get as nodecg } from './nodecg';
 
@@ -26,3 +26,5 @@ export const startSoonReplicant = nodecg().Replicant<StartSoon>('startSoon', {
 export const checklistReplicant = nodecg().Replicant<Checklist>('checklist', 'nodecg-speedcontrol');
 
 export const runDataActiveRunReplicant = nodecg().Replicant<RunDataActiveRun>('runDataActiveRun', 'nodecg-speedcontrol');
+
+export const externalTwitchAPIData = nodecg().Replicant<ExternalTwitchAPIData>('externalTwitchAPIData');

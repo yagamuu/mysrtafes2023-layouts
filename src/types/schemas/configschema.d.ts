@@ -18,4 +18,11 @@ export interface Configschema {
 		night: string;
 		[k: string]: unknown;
 	};
+	twitch: {
+		externalAccessToken?: string;
+		externalRefreshToken?: string;
+		externalClientID?: string;
+		clientID?: string;
+		clientSecret?: string;
+	}
 }

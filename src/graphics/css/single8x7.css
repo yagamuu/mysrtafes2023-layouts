@@ -1,0 +1,254 @@
+body {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titleWrap {
+  /* Frame 19 */
+
+  box-sizing: border-box;
+
+  /* オートレイアウト */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 20px;
+
+  position: absolute;
+  width: 547px;
+  height: 333px;
+  left: 0px;
+  top: 193px;
+
+  /* bgHeader
+  
+  ゲームタイトル背景色
+  */
+  background: rgba(0, 0, 0, 0.38);
+  background-blend-mode: multiply;
+  /* mdrfPrimaryThin
+  
+  枠線色
+  */
+  border-width: 4px 4px 0px 0px;
+  border-style: solid;
+  border-color: #edfaf1;
+}
+
+.player_display_outer {
+  position: absolute;
+  width: 1177px;
+  height: 1030px;
+  left: 651px;
+  top: 0px;
+
+  /* mdrfPrimaryThin
+  
+  枠線色
+  */
+
+  display: flex;
+  align-items: center;
+
+  border-width: 0px 4px;
+  border-style: solid;
+  border-color: #edfaf1;
+}
+
+.player_display {
+  width: 1169px;
+  height: 1030px;
+  left: 651px;
+  top: 0px;
+
+  background: red;
+  /* mdrfPrimaryThin
+  
+  枠線色
+  */
+  border-style: solid;
+  border-color: #edfaf1;
+}
+
+.title {
+  width: 515px;
+  height: 159px;
+
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 125%;
+  /* または52px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
+
+  /* オートレイアウト内部 */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.time > span {
+  width: 262px;
+  height: 80px;
+
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 100%;
+  /* ボックスの高さと同一、または80px */
+
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: 0.005em;
+
+  /* textPrimary */
+
+  color: #363636;
+
+  /* オートレイアウト内部 */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  display: block;
+  border-right: 2px dashed #ffffff;
+}
+
+.time {
+  background-image: url("../images/single8x7/timeBack.png");
+  background-size: cover;
+  position: absolute;
+  width: 547px;
+  height: 130px;
+  left: 0px;
+  top: 526px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-bottom: solid 4px #edfaf1;
+}
+
+.time p {
+  width: 182px;
+  height: 70px;
+
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 125%;
+  /* または38px */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  /* textPrimary */
+
+  color: #363636;
+
+  /* オートレイアウト内部 */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.time p .mes {
+  width: 130px;
+  height: 26px;
+
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 100%;
+  margin-bottom: 5px;
+}
+
+.time p .count {
+  width: 108px;
+  height: 34px;
+
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 100%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* textPrimary */
+
+  color: #363636;
+
+  /* オートレイアウト内部 */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.category {
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  /* ボックスの高さと同一、または100% */
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  color: #ffffff;
+}
+
+.categoryDetail {
+  margin-bottom: 15px;
+}
+
+.discordBox {
+  box-sizing: border-box;
+
+  /* オートレイアウト */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px 24px;
+  gap: 10px;
+
+  position: absolute;
+  width: 547px;
+  height: 374px;
+  left: 0px;
+  top: 656px;
+
+  border-width: 0px 4px 0px 0px;
+  border-style: solid;
+  border-color: #edfaf1;
+}

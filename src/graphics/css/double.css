@@ -1,0 +1,321 @@
+body {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titleWrap {
+  /* Frame 19 */
+
+  box-sizing: border-box;
+
+  /* オートレイアウト */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  gap: 16px;
+
+  position: absolute;
+  width: 1640px;
+  height: 215px;
+  left: 280px;
+  top: 0px;
+
+  /* bgHeader
+  
+  ゲームタイトル背景色
+  */
+  background: rgba(0, 0, 0, 0.38);
+  background-blend-mode: multiply;
+  /* mdrfPrimaryThin
+  
+  枠線色
+  */
+  border-bottom: 4px solid #edfaf1;
+}
+
+.title {
+  display: block;
+  height: 60px;
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 50px;
+  color: #ffffff;
+  text-shadow: 2px 3px 4px rgb(0 0 0 / 25%);
+}
+
+.time > span {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 100%;
+  /* ボックスの高さと同一、または80px */
+
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: 0.005em;
+
+  /* textFinish */
+
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+
+  letter-spacing: 0.005em;
+
+  width: 272px;
+  text-align: center;
+  /* textPrimary */
+  color: #363636;
+
+  /* オートレイアウト内部 */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 8px;
+  border-right: 2px dashed #ffffff;
+}
+
+.time {
+  background-image: url("../images/double/timeBack.png");
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  isolation: isolate;
+
+  position: absolute;
+  width: 661px;
+  height: 164px;
+  left: 1259px;
+  top: 811px;
+  border-width: 0px 0px 4px 0px;
+  border-style: solid;
+  border-color: #edfaf1;
+  padding-top: 10px;
+}
+
+.time p {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #363636;
+  flex-direction: column;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-left: 34px;
+  margin-bottom: 10px;
+}
+
+.time p .mes {
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 125%;
+}
+
+.time p .count {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #363636;
+  margin-left: 8px;
+}
+
+.category {
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  /* ボックスの高さと同一、または100% */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.categoryDetail {
+  margin-right: 30px;
+}
+
+.discordBox {
+  /* grid:解説 */
+
+  box-sizing: border-box;
+
+  /* オートレイアウト */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 12px;
+
+  position: absolute;
+  width: 1259px;
+  height: 164px;
+  left: 0px;
+  top: 811px;
+
+  /* mdrfPrimaryThin
+  
+  枠線色
+  */
+  border-width: 4px 4px 4px 0px;
+  border-style: solid;
+  border-color: #edfaf1;
+}
+
+.player_name {
+  /* Block/走者表示PUP16×9 */
+
+  box-sizing: border-box;
+
+  /* オートレイアウト */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2px 12px 8px 8px;
+  border-top: 6px solid #2b5f3b;
+  border-left: 16px solid #2b5f3b;
+  gap: 10px;
+
+  /* mdrfPrimary */
+
+  background: #71b988;
+
+  /* オートレイアウト内部 */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 41px;
+  /* ボックスの高さと同一 */
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  color: #ffffff;
+}
+
+.clear .player_name {
+  border-top: 6px solid #f5d426;
+  border-left: 16px solid #f5d426;
+}
+
+.player1 .player_time,
+.player2 .player_time {
+  opacity: 0;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 12px;
+  bottom: 2px;
+
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 41px;
+
+  color: #ffe142;
+}
+
+.player1 .player_time {
+  right: 15.6px;
+  bottom: 6.5px;
+
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 47px;
+  text-align: right;
+
+  /* textFinish */
+
+  color: #ffe142;
+}
+
+.player_time img {
+  width: 36px;
+  height: 36px;
+  margin-right: 3px;
+}
+
+.player1.clear .player_time,
+.player2.clear .player_time {
+  opacity: 1;
+}
+
+.player_display {
+  background-color: red;
+  position: absolute;
+  width: 958px;
+  height: 539px;
+}
+
+.player2 {
+  position: absolute;
+  width: 958px;
+  height: 600px;
+  right: 0px;
+  top: 212px;
+  border-width: 4px 0px 0px 0px;
+  border-style: solid;
+  border-color: #edfaf1;
+}
+
+.player1 {
+  position: absolute;
+  width: 962px;
+  height: 600px;
+  left: 0px;
+  top: 212px;
+
+  /* mdrfPrimaryThin
+  
+  枠線色
+  */
+  border-right: 4px solid #edfaf1;
+  border-width: 4px 4px 0px 0px;
+  border-style: solid;
+  border-color: #edfaf1;
+}
+
+.bgmOn {
+  width: 32px;
+  background: url(../images/Icon/speaker.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  height: 40px;
+}
+
+.bgmOn.active {
+  opacity: 0.5;
+}

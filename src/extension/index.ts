@@ -17,4 +17,5 @@ export = (nodecg: NodeCG): void => {
   require('./information');
   require('./displaySound');
   require('./startSoon');
+  require('./twitchApi');
 };

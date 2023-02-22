@@ -1,0 +1,106 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url() !important;
+}
+  
+#container {
+  background-image: url("../images/background.png");
+  width: 100vw;
+  height: 100vh;
+}
+
+.twitterBox {
+  /* type=デフォルト */
+
+  box-sizing: border-box;
+
+  /* オートレイアウト */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 244px;
+
+  position: absolute;
+  width: 1920px;
+  height: 50px;
+  left: 0px;
+  bottom: 0px;
+
+  /* mdrfPrimaryDark */
+
+  background: #2b5f3b;
+  /* mdrfPrimaryThin
+
+枠線色
+*/
+  border-width: 4px 1px 1px 1px;
+  border-style: solid;
+  border-color: #edfaf1;
+  border-radius: 0px;
+
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 29px;
+  /* ボックスの高さと同一 */
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #ffffff;
+}
+
+.twitterBox .tag {
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+
+  display: flex;
+  align-items: center;
+
+  color: #77c8ff;
+  margin-right: 20px;
+  padding-top: 2px;
+}
+
+.twitterBox .tag img {
+  width: 32px;
+  padding-bottom: 8px;
+}
+
+.twitterBox .right {
+  display: flex;
+}
+
+.twitterBox .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+}
+
+.time > span.clear {
+  color: #ffe142;
+}
+
+.bgmOn {
+  width: 32px;
+  height: 40px;
+  background: url(../images/Icon/speaker.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  opacity: 0;
+}
+
+.bgmOn.active {
+  opacity: 0.5;
+}
