@@ -6,5 +6,16 @@
  */
 
 export interface Configschema {
-	exampleProperty: string;
+	gameLayoutBackgroundImage: {
+		morning: string;
+		evening: string;
+		night: string;
+		[k: string]: unknown;
+	};
+	setupLayoutBackgroundImage: {
+		morning: string;
+		evening: string;
+		night: string;
+		[k: string]: unknown;
+	};
 }

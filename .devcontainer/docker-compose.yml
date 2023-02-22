@@ -8,6 +8,7 @@ services:
         VARIANT: "16-bullseye"
     ports:
       - "9090:9090"
+      - "3000:3000"
     volumes:
       - ../:/home/node/app/bundles/mysrtafes2023-layouts
       - ../cfg:/home/node/app/cfg

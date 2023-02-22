@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 
-import type { ExampleReplicant } from '@mysrtafes2023-layouts/types/schemas';
+import type { SetupInformationArray, DisplaySound, StartSoon } from '@mysrtafes2023-layouts/types/schemas';
+import type { RunDataActiveRun, Checklist } from '@mysrtafes2023-layouts/types/schemas/speedcontrol';
 import { get as nodecg } from './nodecg';
 
 /**
@@ -8,6 +9,20 @@ import { get as nodecg } from './nodecg';
  * and to make sure they have any correct settings on startup.
  */
 
-// YOU CAN REMOVE THIS RULE WHEN YOU GET MULTIPLE REPLICANTS!
-// eslint-disable-next-line import/prefer-default-export
-export const exampleReplicant = nodecg().Replicant<ExampleReplicant>('exampleReplicant');
+export const informationArrayReplicant = nodecg().Replicant<SetupInformationArray>('setupInformationArray', {
+  defaultValue: [],
+});
+
+export const displaySoundReplicant = nodecg().Replicant<DisplaySound>('displaySound', {
+  defaultValue: {
+    playerId: '',
+  },
+});
+
+export const startSoonReplicant = nodecg().Replicant<StartSoon>('startSoon', {
+  defaultValue: false,
+});
+
+export const checklistReplicant = nodecg().Replicant<Checklist>('checklist', 'nodecg-speedcontrol');
+
+export const runDataActiveRunReplicant = nodecg().Replicant<RunDataActiveRun>('runDataActiveRun', 'nodecg-speedcontrol');

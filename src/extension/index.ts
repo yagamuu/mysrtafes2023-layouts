@@ -14,5 +14,7 @@ export = (nodecg: NodeCG): void => {
    * things to be loaded *after* the NodeCG context is set.
    */
   set(nodecg);
-  require('./example');
+  require('./information');
+  require('./displaySound');
+  require('./startSoon');
 };

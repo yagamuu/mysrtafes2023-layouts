@@ -28,6 +28,6 @@ RUN npm i
 
 WORKDIR /home/node/app
 
-EXPOSE 9090
+EXPOSE 9090 3000
 
 CMD ["nodecg", "start"]

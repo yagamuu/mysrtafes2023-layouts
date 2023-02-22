@@ -27,12 +27,14 @@
     "watch:extension": "tsc -b tsconfig.extension.json -w"
   },
   "dependencies": {
-    "module-alias": "^2.2.2"
+    "module-alias": "^2.2.2",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@quasar/extras": "^1.15.6",
     "@quasar/vite-plugin": "^1.2.3",
     "@types/node": "^18.11.10",
+    "@types/uuid": "^9.0.0",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",
     "@vitejs/plugin-vue": "^2.3.4",
@@ -63,9 +65,25 @@
     "compatibleRange": "^1.9.0",
     "dashboardPanels": [
       {
-        "name": "example",
-        "title": "Example",
-        "file": "example.html"
+        "name": "setupInformation",
+        "title": "Setup Information",
+        "file": "setupInformation.html",
+        "width": 3,
+        "workspace": "MysRTAFesSettings"
+      },
+      {
+        "name": "displaySound",
+        "title": "Display Sound",
+        "file": "displaySound.html",
+        "width": 3,
+        "workspace": "MysRTAFesSettings"
+      },
+      {
+        "name": "startSoon",
+        "title": "Start Soon",
+        "file": "startSoon.html",
+        "width": 3,
+        "workspace": "MysRTAFesSettings"
       }
     ],
     "graphics": [
