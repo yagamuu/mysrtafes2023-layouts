@@ -3,7 +3,8 @@ import { computed } from 'vue';
 import TheFooter from './TheFooter.vue';
 
 interface Props {
-  clipPath?: string
+  clipPath?: string,
+  backgroundUrl?: string,
 }
 
 const props = defineProps<Props>();
@@ -11,8 +12,11 @@ const props = defineProps<Props>();
 const style = computed(() => {
   const clip = props.clipPath ? `polygon(${props.clipPath})` : '';
 
+  const backgroundImage = props.backgroundUrl ? `url(${props.backgroundUrl})` : undefined;
+
   return {
     clipPath: clip,
+    backgroundImage,
   };
 });
 
