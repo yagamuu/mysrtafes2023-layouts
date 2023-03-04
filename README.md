@@ -13,7 +13,7 @@ This is the [NodeCG](http://github.com/nodecg/nodecg) bundle used for the stream
 - [nodecg-speedcontrol](https://github.com/speedcontrol/nodecg-speedcontrol): NodeCG bundle for broadcast graphics framework/application.
 - [nodecg-vue-ts-template](https://github.com/zoton2/nodecg-vue-ts-template): Template for NodeCG bundles that use Vue.js and TypeScript.
 - [nodecg-spotify-widget](https://github.com/cma2819/nodecg-spotify-widget): NodeCG layout bundle for showing spotify information.
-- [Kajiro](https://twitter.com/jiro90000): Graphics design, Setup background illust, Event image character design.
-- [Icarus](https://twitter.com/UranosTubasaPMD): Event image character design.
+- [Kajiro](https://twitter.com/jiro90000): Graphics design, Setup background illust, Marathon official mascot design.
+- [Icarus](https://twitter.com/UranosTubasaPMD): Marathon official mascot design.
 - [bear](https://twitter.com/bearfaust0123): HTML/CSS coding.
 - [isuZu](https://twitter.com/y_isuZu): Marathon Logo.
